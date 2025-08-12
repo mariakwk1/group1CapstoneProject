@@ -17,13 +17,13 @@ struct ContentView: View {
             }//end vstack
         }//end navstacl
             Text("MindMosaic")
-        NavigationLink(destination: secondView()) {
+       // NavigationLink(destination: secondView()) {
             Text("Click here for menu")
         }//end navlink
     }//end body
       
    
-}//end content
+//end content
 
 #Preview {
     ContentView()
