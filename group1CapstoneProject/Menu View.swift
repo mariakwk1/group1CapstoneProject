@@ -10,7 +10,7 @@ import SwiftUI
 struct Menu_View: View {
     var body: some View {
         VStack{
-            
+    
         }//end of Vstack
     }//end of var
 }//end of struct
