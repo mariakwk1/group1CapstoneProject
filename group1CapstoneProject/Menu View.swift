@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Menu_View: View {
-    @Binding var menu: menu
+    @Binding var menu: Menu
     var body: some View {
         VStack{
             TextField("menu", text:)
