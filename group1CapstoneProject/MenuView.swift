@@ -16,7 +16,7 @@ struct Menu_View: View {
         VStack(alignment: .leading){
             TextField("Menu", text: $menu)
                 .frame(width: 200, height: 50) // Sets a fixed width and height
-                .font(.system(size: 20, weight: .bold))
+                .font(.system(size: 21, weight: .bold))
                 
                 .multilineTextAlignment(.center)
                 .background(
