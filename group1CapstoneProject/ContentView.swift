@@ -12,6 +12,7 @@ struct ContentView: View {
         NavigationStack{
             VStack {
                 Image("human_brain-removebg-preview")
+                    .resizable(resizingMode: .tile)
                     .aspectRatio(contentMode: .fit)
                    
             }//end vstack
