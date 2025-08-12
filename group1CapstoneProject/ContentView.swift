@@ -9,15 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
+        NavigationStack{
+            VStack {
+                ZStack{
+                    Image("human_brain-removebg-preview")
+                        .aspectRatio(contentMode: .fit)
+                    Menu(/*@START_MENU_TOKEN@*/"Menu"/*@END_MENU_TOKEN@*/) {
+                        Text("Quotes")
+                        Text("Journal")
+                        Text("Drawing")
+                        Text("Hobbies")
+                    }
+                }//end of zstack
+            }//end vstack
+        }//end navstacl
             Text("MindMosaic")
-        }
-        .padding()
-    }
-}
+       // NavigationLink(destination: secondView()) {
+            Text("Click here for menu")
+        }//end navlink
+    }//end body
+      
+   
+//end content
 
 #Preview {
     ContentView()
