@@ -30,7 +30,6 @@ struct ContentView: View {
         }//end navstacl
            
         }//end navlink
-    }//end body
       
 #Preview {
            ContentView()
