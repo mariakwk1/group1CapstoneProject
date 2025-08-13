@@ -8,23 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var viewMenu="Menu"
     var body: some View {
         NavigationStack{
             VStack {
                 ZStack{
                     Image("human_brain-removebg-preview")
                         .aspectRatio(contentMode: .fit)
-//<<<<<<< HEAD
-                   
-//=======
 
-//>>>>>>> main
+                    NavigationLink(destination: MenuView(menu: $viewMenu)) {
+                        Image("human_brain-removebg-preview")
+                    }
                 }//end of zstack
             }//end vstack
-        }//end navstacl
             Text("MindMosaic")
+       
+    
        // NavigationLink(destination: secondView()) {
             Text("Click here for menu")
+        }//end navstacl
+           
         }//end navlink
     }//end body
       
