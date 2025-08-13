@@ -8,16 +8,37 @@
 import SwiftUI
 
 struct HobbiesView: View {
+    @Binding var testing: String
     var body: some View {
         ZStack{
             Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
                 .ignoresSafeArea()
+            
+            
+            
             VStack {
+                VStack{
+                    VStack(alignment: .leading){
+                        TextField("testing", text: $testing)
+                            .frame(width: 200, height: 50) // Sets a fixed width and height
+                            .font(.system(size: 20, weight: .bold))
+                            
+                            .multilineTextAlignment(.center)
+                            .background(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color(hue: 0.165, saturation: 0.64, brightness: 0.986, opacity: 0.475))
+                            )
+                            .foregroundColor(.black)
+                            .background(Color(.systemGroupedBackground))
+                            .frame(width: 100.0)
+                            .cornerRadius(21)
+                            .padding()
+                            Spacer()
+                       
                 
-                Text("Hobbies")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color(hue: 0.403, saturation: 0.284, brightness: 0.739))
+            }///end of hobbies vstack
+                
+                
                 HStack{// start of first hstack
                     Image("crafts")
                         .resizable(resizingMode: .stretch)
