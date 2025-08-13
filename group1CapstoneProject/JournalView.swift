@@ -21,19 +21,29 @@ struct JournalView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .background(Rectangle().foregroundColor(.white))
+                    .border(Color.black, width: 10)
                     .cornerRadius(12)
                     Spacer()
                 
                 TextEditor(text: $textContext)
                     .cornerRadius(12)
-                    .frame(height: 600)
+                    .frame(height: 500)
                     .padding(.horizontal,20)
                     Spacer()
+                
+           /* Button(action: {
+                textContext }) {
+            Text("Save")
+           .foregroundColor(.black)
+           .padding()
+           .background(Color.white)
+           .cornerRadius(10)
+            //keep this code want to save journal entry
+            */
+               }
             } // end vstack
         }//zstack
     }
-}
-
 #Preview {
     JournalView()
 }

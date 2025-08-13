@@ -15,22 +15,21 @@ struct ContentView: View {
     ZStack {
      // Full screen background
         Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
-
-    Spacer()
-                    NavigationLink(destination: MenuView(menu: $viewMenu)) {
-                        Image("human_brain-removebg-preview")
+            .ignoresSafeArea()
+        Spacer()
+        NavigationLink(destination: MenuView(menu: $viewMenu)) {
+                    Image("human_brain-removebg-preview")
                     }
                 }//end of zstack
             }//end vstack
             Text("MindMosaic")
-       
-    
+        
        // NavigationLink(destination: secondView()) {
             Text("Click Icon for menu")
         }//end navstacl
            
         }//end navlink
-    }//end body
+//end body
       
 #Preview {
            ContentView()

@@ -21,17 +21,25 @@ struct QuoteView: View {
                     .padding(.vertical, 15)
                     .background(
                     Capsule()
-                  .fill(Color.white.opacity(0.7))
+                  .fill(Color.white.opacity(0.9))
                                         )
                   .foregroundColor(.black)
                 .padding(.top, 40)
-                Spacer()
+                 Spacer()
                
+                Image("miffy-removebg-preview")
                 Text("If you dont risk anything, you risk even more. - Erica Jong")
-                    .font(.title)
-                
-                   
-            }
+                    .padding()
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color.gray)
+                    .padding()
+                    .border(Color.gray, width: 10)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .background(Rectangle().foregroundColor(.white))
+                    .cornerRadius(12)
+                Spacer()
+          }
         }
     }
 }
