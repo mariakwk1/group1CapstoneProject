@@ -30,6 +30,38 @@ struct ContentView: View {
            
         }//end navlink
 //end body
+        NavigationStack {
+            ZStack {
+                // Full screen background
+                Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
+                    .ignoresSafeArea()
+                NavigationLink(destination: MenuView(menu: $viewMenu)) {
+                    Image("human_brain-removebg-preview")
+                }
+                
+                
+                
+                Text("MindMosaic")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .padding(.bottom, 600)
+                
+                
+                
+                // NavigationLink(destination: secondView()) {
+                Text("Click Icon for menu")
+                    .font(.headline)
+                    .fontWeight(.semibold)
+                    .padding(.top, 700)
+                
+            }//end navstac
+            
+        }//end of zstack
+        
+//end navlink]
+
+
+
       
 #Preview {
            ContentView()
