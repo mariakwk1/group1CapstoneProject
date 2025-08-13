@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct JournalView: View {
+    @State private var textContext: String = "Start typing here..."
     var body: some View {
        
         ZStack{
@@ -15,17 +16,16 @@ struct JournalView: View {
                 .ignoresSafeArea()
            
             VStack{
-                Text("What was your greatest achievement today 🧐")
+                Text("What was your greatest achievement today?")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .background(Rectangle().foregroundColor(.white))
                     .cornerRadius(10)
                 Spacer()
                 
-                TextField("Enter your achievement here...", text: .constant(""), axis:.vertical)
-                    .padding()
-                    .background(Rectangle().foregroundColor(.white))
-                    .cornerRadius(10)
+                TextEditor(text: $textContext)
+                    .cornerRadius(20)
+               
             } // end vstack
         }//zstack
     }
