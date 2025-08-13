@@ -16,7 +16,7 @@ struct ContentView: View {
                     .aspectRatio(contentMode: .fit)
                    
             }//end vstack
-        }//end navstacl
+        }//end navstack
             Text("MindMosaic")
        // NavigationLink(destination: secondView()) {
             Text("Click here for menu")
