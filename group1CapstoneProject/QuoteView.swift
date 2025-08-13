@@ -13,7 +13,7 @@ struct QuoteView: View {
                 Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
                     .ignoresSafeArea()
             VStack{
-                Text("Quote Of The Day")
+                Text("Quote Of The Day!")
                     .padding()
                     .font(.largeTitle)
                     .fontWeight(.bold)
