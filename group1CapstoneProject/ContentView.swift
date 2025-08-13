@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var viewMenu="Menu"
+    
     var body: some View {
         NavigationStack{
             VStack {

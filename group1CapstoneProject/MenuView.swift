@@ -30,24 +30,60 @@ struct MenuView: View {
                 .cornerRadius(21)
                 .padding()
                 Spacer()
-        HStack{
-            Image("Screenshot 2025-08-13 at 11.48.02 AM")
+            NavigationLink(destination: JournalView()){
+                HStack{// start of first hstack
+                    Image("Screenshot 2025-08-13 at 11.48.02 AM")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .padding(.all, 50.0)
+                    VStack{// text vstack
+                        Text("Journal")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        
+                        Text ("Get a prompt of the day to write about")
+                    }
+                    }// end of first text vstack
+                }
+            }//end of first hstack
+            HStack{//start of 2nd hstack
+                Image("Screenshot 2025-08-13 at 1.18.40 PM")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all, 50.0)
+                VStack{ //
+                    Text ("Hobbies")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text ("Crafts, Activities and more")
+                }
+            }// end of 2nd hstack
+            HStack{// 3rd hstack
+            Image ("Screenshot 2025-08-13 at 1.13.45 PM")
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .padding(.all, 50.0)
-            Spacer()
-            VStack{
-                Text("Journal")
-                    .font(.title)
-                    .fontWeight(.bold)
-                Text("Get a prompt of the day to write about")
-             
-            }
+                VStack {
+                    Text("Drawing")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text ("Choose a drawing to color in")
+                }
+        }//end of 3rd hstack
+            HStack {///start of 4th hstack
+                Image ("Screenshot 2025-08-13 at 1.20.48 PM")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .padding(.all, 50.0)
+                VStack{
+                    Text ("Quotes")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    Text("Affirmations, advice and quotes of the day")}
+            }/// end of 4th hstack
             
-            }
             
-
-                Spacer()
+            
             }//end of vstack
            
 
