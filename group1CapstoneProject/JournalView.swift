@@ -15,7 +15,7 @@ struct JournalView: View {
                 .ignoresSafeArea()
            
             VStack{
-                Text("What was your greatest achievement today🧐")
+                Text("What was your greatest achievement today 🧐")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .background(Rectangle().foregroundColor(.white))
