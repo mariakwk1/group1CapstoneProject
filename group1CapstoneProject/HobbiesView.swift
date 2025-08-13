@@ -23,12 +23,12 @@ struct HobbiesView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .padding(.all, 50.0)
+                    Spacer ()
                     VStack{// text vstack
                         Text("Crafts")
                             .font(.title)
                             .fontWeight(.bold)
-                            
-                    
+                        
                     Text ("Calming craft videos and guides")
                 }// end of first text vstack
             
@@ -38,6 +38,7 @@ struct HobbiesView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .padding(.all, 50.0)
+                    Spacer()
                     VStack{ //
                         Text ("Cooking")
                             .font(.title)
@@ -50,6 +51,7 @@ struct HobbiesView: View {
                     .resizable(resizingMode: .stretch)
                     .aspectRatio(contentMode: .fit)
                     .padding(.all, 50.0)
+                    Spacer ()
                     VStack {
                         Text("Puzzles")
                             .font(.title)
@@ -61,6 +63,7 @@ struct HobbiesView: View {
                         .resizable(resizingMode: .stretch)
                         .aspectRatio(contentMode: .fit)
                         .padding(.all, 50.0)
+                    Spacer ()
                     VStack{
                         Text ("Yoga")
                             .font(.title)
@@ -74,7 +77,8 @@ struct HobbiesView: View {
             } // vstack ending
         } // Z stack ending
             
-    }
+    } /// end of var body
+    /// scrolling bracket
 }
 
 #Preview {
