@@ -14,16 +14,11 @@ struct ContentView: View {
                 ZStack{
                     Image("human_brain-removebg-preview")
                         .aspectRatio(contentMode: .fit)
-<<<<<<< HEAD
-                    Menu(/*@START_MENU_TOKEN@*/"Menu"/*@END_MENU_TOKEN@*/) {
-                        Text("Quotes")
-                        Text("Journal")
-                        Text("Drawing")
-                        Text("Hobbies")
-                    }
-=======
+//<<<<<<< HEAD
+                   
+//=======
 
->>>>>>> main
+//>>>>>>> main
                 }//end of zstack
             }//end vstack
         }//end navstacl
