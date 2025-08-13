@@ -15,17 +15,20 @@ struct JournalView: View {
             Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
                 .ignoresSafeArea()
            
-            VStack{
+            VStack(spacing: 30){
                 Text("What was your greatest achievement today?")
+                    .padding()
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .background(Rectangle().foregroundColor(.white))
-                    .cornerRadius(10)
-                Spacer()
+                    .cornerRadius(12)
+                    Spacer()
                 
                 TextEditor(text: $textContext)
-                    .cornerRadius(20)
-               
+                    .cornerRadius(12)
+                    .frame(height: 500)
+                    .padding(.horizontal,20)
+                    Spacer()
             } // end vstack
         }//zstack
     }
