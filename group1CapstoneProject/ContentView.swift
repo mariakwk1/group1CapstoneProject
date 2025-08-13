@@ -13,9 +13,9 @@ struct ContentView: View {
     NavigationStack {
     ZStack {
      // Full screen background
-    Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
-        .ignoresSafeArea()
-    VStack {
+        Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
+            .ignoresSafeArea()
+        VStack {
     Spacer()
 
     Text("MindMosaic")
