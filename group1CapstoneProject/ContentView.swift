@@ -14,6 +14,11 @@ struct ContentView: View {
                 ZStack{ // end z
                     Image("human_brain-removebg-preview")
                         .aspectRatio(contentMode: .fit)
+//<<<<<<< HEAD
+                   
+//=======
+
+//>>>>>>> main
                 }//end of zstack
 
             }//end vstack
