@@ -25,7 +25,7 @@ struct ContentView: View {
        
     
        // NavigationLink(destination: secondView()) {
-            Text("Click here for menu")
+            Text("Click Icon for menu")
         }//end navstacl
            
         }//end navlink

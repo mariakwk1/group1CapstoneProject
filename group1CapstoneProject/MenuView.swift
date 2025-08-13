@@ -13,7 +13,8 @@ struct MenuView: View {
         ZStack{
             Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
                 .ignoresSafeArea()
-        VStack(alignment: .leading){
+        VStack{
+   
             TextField("Menu", text: $menu)
                 .frame(width: 200, height: 50) // Sets a fixed width and height
                 .font(.system(size: 20, weight: .bold))
@@ -29,8 +30,27 @@ struct MenuView: View {
                 .cornerRadius(21)
                 .padding()
                 Spacer()
-           
+        HStack{
+            Image("Screenshot 2025-08-13 at 11.48.02 AM")
+                .resizable(resizingMode: .stretch)
+                .aspectRatio(contentMode: .fit)
+                .padding(.all, 50.0)
+            Spacer()
+            VStack{
+                Text("Journal")
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("Get a prompt of the day to write about")
+             
+            }
+            
+            }
+            
+
+                Spacer()
             }//end of vstack
+           
+
         }//end of zstack
         
     }//end of var
