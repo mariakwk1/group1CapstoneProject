@@ -9,24 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        ZStack{
+            Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
+                .ignoresSafeArea()
+            Spacer()
+            Text("MindMosaic")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+        }
         NavigationStack{
             VStack {
                 ZStack{ // end z
                     Image("human_brain-removebg-preview")
                         .aspectRatio(contentMode: .fit)
-//<<<<<<< HEAD
-                   
-//=======
-
-//>>>>>>> main
                 }//end of zstack
-
             }//end vstack
+        
         }//end navstack
-           
-        Text("MindMosaic")
-       // NavigationLink(destination: secondView()) {
-            Text("Click here for menu")
+        // NavigationLink(destination: secondView()) {
+        Text("Click 🧠 for menu")
+            .font(.headline)
+        Spacer()
+    
         }//end navlink
     }//end body
       
