@@ -25,7 +25,7 @@ struct HobbiesView: View {
                         .padding(.all, 50.0)
                     Spacer ()
                     VStack{// text vstack
-                        Text("Crafts")
+                        Text ( "Crafts")
                             .font(.title)
                             .fontWeight(.bold)
                         
