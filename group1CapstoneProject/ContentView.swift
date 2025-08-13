@@ -11,13 +11,15 @@ struct ContentView: View {
     var body: some View {
         NavigationStack{
             VStack {
-                Image("human_brain-removebg-preview")
-                    .resizable(resizingMode: .tile)
-                    .aspectRatio(contentMode: .fit)
-                   
+                ZStack{ // end z
+                    Image("human_brain-removebg-preview")
+                        .aspectRatio(contentMode: .fit)
+                }//end of zstack
+
             }//end vstack
         }//end navstack
-            Text("MindMosaic")
+           
+        Text("MindMosaic")
        // NavigationLink(destination: secondView()) {
             Text("Click here for menu")
         }//end navlink
