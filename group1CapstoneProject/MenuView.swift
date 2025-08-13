@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Menu_View: View {
+struct MenuView: View {
     @Binding var menu: String
     var body: some View {
         ZStack{
@@ -38,5 +38,5 @@ struct Menu_View: View {
 }//end of struct
 
 #Preview {
-    Menu_View(menu:.constant("Menu"))
+    MenuView(menu:.constant("Menu"))
 }
