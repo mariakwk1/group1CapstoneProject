@@ -29,7 +29,7 @@ struct MenuView: View {
                         .foregroundColor(.black)
                         .background(Color(.systemGroupedBackground))
                         .frame(width: 100.0)
-                        .cornerRadius(20)
+                        .cornerRadius(21)
                         .padding()
                     Spacer()
                     
