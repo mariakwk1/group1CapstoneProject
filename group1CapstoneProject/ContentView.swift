@@ -29,8 +29,8 @@ struct ContentView: View {
         }//end navstacl
            
         }//end navlink
-//end body
-          /*NavigationStack {
+
+         /* NavigationStack {
             ZStack {
                 // Full screen background
                 Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
@@ -55,8 +55,7 @@ struct ContentView: View {
             }//end navstac
             
         }//end of zstack
-        
-//end navlink]
+
 
 
 
@@ -96,4 +95,4 @@ struct ContentView: View {
 //}
 //}
 //}
-//}
+          //}*/
