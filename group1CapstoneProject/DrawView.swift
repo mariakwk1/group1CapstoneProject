@@ -30,11 +30,9 @@ struct DrawView: View {
 
                 GeometryReader { geometry in
                     ZStack {
-                        // Canvas background
                         Color.white
                             .cornerRadius(12)
 
-                        // Drawing paths
                         Path { path in
                             for line in lines {
                                 guard let first = line.first else { continue }
@@ -64,9 +62,9 @@ struct DrawView: View {
                 }
                 .frame(height: 450)
 
-                // ✅ Clear Button
+                
                 Button(action: {
-                    lines = []  // Clear all drawings
+                    lines = []
                 }) {
                     Text("Clear")
                         .font(.title2)
