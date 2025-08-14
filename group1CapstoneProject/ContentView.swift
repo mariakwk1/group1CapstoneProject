@@ -30,7 +30,7 @@ struct ContentView: View {
             .padding()
        // NavigationLink(destination: secondView()) {
             
-        Text("Click Icon for menu")
+        Text("Click 🧠 for menu")
             .font(.headline)
             .fontWeight(.semibold)
             .padding()
