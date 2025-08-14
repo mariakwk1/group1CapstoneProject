@@ -1,13 +1,9 @@
-//
-//  HobbiesView.swift
-//  group1CapstoneProject
-//
-//  Created by Scholar on 8/12/25.
-//
-
 import SwiftUI
 
-struct HobbiesView: View {
+struct testingView: View {
+    @State private var viewYoga = "Yoga"
+    @State private var viewCrafts = "Crafts"
+    
     var body: some View {
         //start of navigation stack
         NavigationStack {
@@ -28,11 +24,23 @@ struct HobbiesView: View {
                         
                         
                         HStack{// start of first hstack
-                            Image("crafts")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 50.0)
-                            
+                        
+                         NavigationLink(destination: CraftsView {//start of navigation link for Crafts
+                             Image("crafts")
+                            .resizable(resizingMode: .stretch)
+                             .aspectRatio(contentMode: .fit)
+                             .padding(.horizontal, 50.0)
+                           } //end of navigation link for Crafts
+                         
+                         
+                         /*
+                            NavigationLink(destination: CraftsView()) {
+                                Image("crafts")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.horizontal, 50.0)
+                            } //end of navigation link
+                        */
                             VStack{// text vstack
                                 
                                 
@@ -102,10 +110,12 @@ struct HobbiesView: View {
                             }
                         }//end of 3rd hstack
                         HStack {///start of 4th hstack
-                            Image ("yoga")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 50.0)
+                            NavigationLink(destination: YogaView()) {
+                                Image("yoga")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.horizontal, 50.0)
+                            }
                             
                             VStack{
                                 
@@ -140,5 +150,4 @@ struct HobbiesView: View {
         HobbiesView()
         
     }
-    
     
