@@ -5,7 +5,6 @@
 //  Created by Scholar on 8/14/25.
 //
 import SwiftUI
-
 struct testingView: View {
     var body: some View {
         //start of navigation stack
@@ -24,13 +23,15 @@ struct testingView: View {
                             .padding(.top, 30.0)
                             .padding(.bottom, 15.0)
                         
-                        
-                        
                         HStack{// start of first hstack
-                            Image("crafts")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 50.0)
+                           
+                            NavigationLink(destination: CraftsView()) {
+                                Image("crafts")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.all, 50.0)
+                            }
+                            
                             
                             VStack{// text vstack
                                 
@@ -101,10 +102,12 @@ struct testingView: View {
                             }
                         }//end of 3rd hstack
                         HStack {///start of 4th hstack
-                            Image ("yoga")
-                                .resizable(resizingMode: .stretch)
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.horizontal, 50.0)
+                            NavigationLink(destination: YogaView()){
+                                Image ("yoga")
+                                    .resizable(resizingMode: .stretch)
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.all, 50.0)
+                            }
                             
                             VStack{
                                 
