@@ -16,13 +16,13 @@ struct DrawView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 16) {
-                Text("Draw your favorite food 🍕🍪?")
+                Text("Draw your favorite food 🍕🍪")
                     .padding()
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(.gray)
                     .background(Color.white)
-                    .border(Color.black, width: 10)
+                    .border(Color(red: 1.0, green: 1.0, blue: 0.7), width: 10)
                     .cornerRadius(12)
                     .padding(.top)
 
@@ -73,8 +73,8 @@ struct DrawView: View {
                         .fontWeight(.semibold)
                         .padding(.horizontal, 30)
                         .padding(.vertical, 10)
-                        .background(Color.mint)
-                        .foregroundColor(.white)
+                        .background(Color(red: 1.0, green: 1.0, blue: 0.7))
+                        .foregroundColor(.gray)
                         .cornerRadius(10)
                 }
 

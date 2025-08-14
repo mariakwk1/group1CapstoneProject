@@ -20,9 +20,9 @@ struct JournalView: View {
                 Text("What was your greatest achievement today?")
                     .padding()
                     .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                     .background(Rectangle().foregroundColor(.white))
-                    .border(Color.black, width: 10)
+                    .border(Color(red: 0.9, green: 0.9, blue: 0.98, opacity: 1), width: 10)
                     .cornerRadius(12)
                 Spacer()
                 
