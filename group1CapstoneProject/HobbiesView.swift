@@ -21,7 +21,7 @@ struct HobbiesView: View {
                         .fontWeight(.heavy)
                         .background(Color(hue: 0.32, saturation: 0.40, brightness: 1.00, opacity: 0.5))
                         .foregroundStyle(Color.black)
-                        .cornerRadius(75)
+                        .cornerRadius(74)
                         .padding(.top, 30.0)
                         .padding(.bottom, 15.0)
                     
