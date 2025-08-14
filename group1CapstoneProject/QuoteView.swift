@@ -10,18 +10,37 @@ import SwiftUI
 struct QuoteView: View {
     var body: some View {
         ZStack{
-            Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
-                .ignoresSafeArea()
+                Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
+                    .ignoresSafeArea()
             VStack{
-                Text("Quote Of The Day ")
+                Text("Quote Of The Day!")
+                    .padding()
                     .font(.largeTitle)
-                    .fontWeight(.medium)
+                    .fontWeight(.bold)
+                    .padding(.horizontal, 30)
+                    .padding(.vertical, 15)
+                    .background(
+                    Capsule()
+                  .fill(Color.white.opacity(0.9))
+                                        )
+                    .foregroundColor(.gray)
+                .padding(.top, 40)
+                 Spacer()
+               
+                Image("miffy-removebg-preview")
+                Text("\"If you don't risk anything, you risk even more.\" - Erica Jong")
+                    .padding()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.gray)
+                    .padding()
+                    .border(Color(red: 0.7, green: 0.85, blue: 1.0), width: 10)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .background(Rectangle().foregroundColor(.white))
-    
-        }//end VStack
-            
-        }// end ZStack
-        
+                    .cornerRadius(12)
+                Spacer()
+          }
+        }
     }
 }
 #Preview {
