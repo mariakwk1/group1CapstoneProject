@@ -14,6 +14,8 @@ struct HobbiesView: View {
                     .ignoresSafeArea()
                 ScrollView {
                 VStack {
+        
+
                     Text("   Hobbies   ") ///
                         .font(.largeTitle)
                         .fontWeight(.heavy)
@@ -32,11 +34,12 @@ struct HobbiesView: View {
                             .padding(.horizontal, 50.0)
                         
                         VStack{// text vstack
-                            Text ( "Crafts")
+                            
+                            Link("Crafts", destination: URL(string:"youtube.com/watch?v=V9Jxsr19KPA")!)
+                                .foregroundColor(.black)
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
-                            
                             Text ("Calming craft videos and guides")
                                 .multilineTextAlignment(.center)
                         }// end of first text vstack
