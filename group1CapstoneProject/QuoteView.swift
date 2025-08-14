@@ -15,7 +15,7 @@ struct QuoteView: View {
             VStack{
                 Text("Quote Of The Day!")
                     .padding()
-                    .font(.title)
+                    .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.horizontal, 30)
                     .padding(.vertical, 15)
