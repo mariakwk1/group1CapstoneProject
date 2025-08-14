@@ -27,7 +27,7 @@ struct ContentView: View {
         Text("MindMosaic")
             .font(.largeTitle)
             .fontWeight(.semibold)
-            .padding(.bottom,600)
+            .padding()
        // NavigationLink(destination: secondView()) {
             
         Text("Click Icon for menu")
