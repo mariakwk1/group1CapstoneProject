@@ -70,13 +70,14 @@ struct MenuView: View {
                         }
                     }// end of 2nd hstack
                     HStack{// 3rd hstack
-                        NavigationLink(destination: JournalView()){
+                        NavigationLink(destination: DrawView()){
                             Image ("Screenshot 2025-08-13 at 1.13.45 PM")
                                 .resizable(resizingMode: .stretch)
                                 .aspectRatio(contentMode: .fit)
                                 .padding(.all, 50.0)
                         }
                         VStack {
+                          
                             Text("Drawing")
                                 .font(.title)
                                 .fontWeight(.bold)
