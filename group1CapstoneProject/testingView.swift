@@ -1,9 +1,12 @@
+//
+//  testingView.swift
+//  group1CapstoneProject
+//
+//  Created by Scholar on 8/14/25.
+//
 import SwiftUI
 
 struct testingView: View {
-    @State private var viewYoga = "Yoga"
-    @State private var viewCrafts = "Crafts"
-    
     var body: some View {
         //start of navigation stack
         NavigationStack {
@@ -24,23 +27,11 @@ struct testingView: View {
                         
                         
                         HStack{// start of first hstack
-                        
-                         NavigationLink(destination: CraftsView {//start of navigation link for Crafts
-                             Image("crafts")
-                            .resizable(resizingMode: .stretch)
-                             .aspectRatio(contentMode: .fit)
-                             .padding(.horizontal, 50.0)
-                           } //end of navigation link for Crafts
-                         
-                         
-                         /*
-                            NavigationLink(destination: CraftsView()) {
-                                Image("crafts")
-                                    .resizable(resizingMode: .stretch)
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.horizontal, 50.0)
-                            } //end of navigation link
-                        */
+                            Image("crafts")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.horizontal, 50.0)
+                            
                             VStack{// text vstack
                                 
                                 
@@ -110,12 +101,10 @@ struct testingView: View {
                             }
                         }//end of 3rd hstack
                         HStack {///start of 4th hstack
-                            NavigationLink(destination: YogaView()) {
-                                Image("yoga")
-                                    .resizable(resizingMode: .stretch)
-                                    .aspectRatio(contentMode: .fit)
-                                    .padding(.horizontal, 50.0)
-                            }
+                            Image ("yoga")
+                                .resizable(resizingMode: .stretch)
+                                .aspectRatio(contentMode: .fit)
+                                .padding(.horizontal, 50.0)
                             
                             VStack{
                                 
@@ -150,4 +139,3 @@ struct testingView: View {
         HobbiesView()
         
     }
-    
