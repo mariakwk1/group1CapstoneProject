@@ -25,7 +25,7 @@ struct JournalView: View {
                     Spacer()
                 
                 TextEditor(text: $textContext)
-                    .cornerRadius(12)
+                    .cornerRadius(13)
                     .frame(height: 600)
                     .padding(.horizontal,20)
                     Spacer()
