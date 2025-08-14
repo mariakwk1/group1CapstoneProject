@@ -16,7 +16,7 @@ struct ContentView: View {
      // Full screen background
         Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
             .ignoresSafeArea()
-      
+                
         NavigationLink(destination: MenuView(menu: $viewMenu))
         {
             Image("human_brain-removebg-preview")
@@ -33,7 +33,7 @@ struct ContentView: View {
         Text("Click Icon for menu")
             .font(.headline)
             .fontWeight(.semibold)
-            .padding(.top, 7)
+            .padding()
         }//end navstack
            
         }//end navlink
