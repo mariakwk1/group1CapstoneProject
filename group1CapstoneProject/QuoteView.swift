@@ -28,7 +28,7 @@ struct QuoteView: View {
                  Spacer()
                
                 Image("miffy-removebg-preview")
-                Text("If you don't risk anything, you risk even more. - Erica Jong")
+                Text("\"If you don't risk anything, you risk even more.\" - Erica Jong")
                     .padding()
                     .fontWeight(.regular)
                     .foregroundColor(Color.gray)
