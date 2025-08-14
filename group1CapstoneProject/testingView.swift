@@ -1,13 +1,12 @@
 //
-//  HobbiesView.swift
+//  testingView.swift
 //  group1CapstoneProject
 //
-//  Created by Scholar on 8/12/25.
+//  Created by Scholar on 8/14/25.
 //
-
 import SwiftUI
 
-struct HobbiesView: View {
+struct testingView: View {
     var body: some View {
         //start of navigation stack
         NavigationStack {
@@ -140,5 +139,3 @@ struct HobbiesView: View {
         HobbiesView()
         
     }
-    
-    
