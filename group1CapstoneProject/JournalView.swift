@@ -9,31 +9,37 @@ import SwiftUI
 
 struct JournalView: View {
     @State private var textContext: String = "Start typing here..."
+    
     var body: some View {
-       
+        
         ZStack{
             Color(hue: 0.10, saturation: 0.234, brightness: 0.871, opacity: 0.475)
                 .ignoresSafeArea()
-           
+            
             VStack(spacing: 2){
-                Text("What was your greatest achievement today?")
+                Text("What was your greatest achievement today and why?")
                     .padding()
                     .font(.largeTitle)
-                    .fontWeight(.bold)
+                    .fontWeight(.semibold)
                     .background(Rectangle().foregroundColor(.white))
+                    .border(Color(red: 0.9, green: 0.9, blue: 0.98, opacity: 1), width: 10)
                     .cornerRadius(12)
-                    Spacer()
+                Spacer()
                 
                 TextEditor(text: $textContext)
                     .cornerRadius(12)
-                    .frame(height: 600)
+                    .frame(height: 500)
                     .padding(.horizontal,20)
-                    Spacer()
-            } // end vstack
-        }//zstack
+                Spacer()
+                
+                Spacer()
+            }
+            .padding()
+        }
     }
 }
 
 #Preview {
-    JournalView()
+JournalView()
 }
+                       
