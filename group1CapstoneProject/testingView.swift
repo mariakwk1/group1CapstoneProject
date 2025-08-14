@@ -35,8 +35,7 @@ struct testingView: View {
                             
                             VStack{// text vstack
                                 
-                                
-                                //navigation link 1 goes here
+    
                                
                                 Text ( "-  Crafts  -")
                                     .font(.title)
